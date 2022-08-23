@@ -15,7 +15,7 @@ const Dashboard = () => {
     getSevenDayWeather();
   }, [location]);
   return (
-    <div>
+    <div className='dashboard'>
       <h1>Dashboard</h1>
       {
         sevenDayWeather?.map((day, i) => <p key={i}>{day.date}</p>)
